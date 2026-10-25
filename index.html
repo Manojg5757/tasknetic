@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take Back Your Time | Tasknetic - 30-Day Digital Detox Guide</title>
+  <meta name="description" content="Reclaim your attention, reduce screen distraction, and automate routine tasks with Tasknetic's 30-Day Digital Detox Guide.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#17152E',
+            surface: '#292640',
+            violet: {
+              DEFAULT: '#7257FF',
+              hover: '#5e43eb',
+              light: 'rgba(114, 87, 255, 0.15)'
+            },
+            lavender: '#C4B8FF',
+            ivory: '#FFF9F0',
+            gold: '#FFCB70',
+            muted: '#D9D5F4'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #17152E;
+      color: #FFF9F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glow-effect {
+      box-shadow: 0 0 35px rgba(114, 87, 255, 0.25);
+    }
+    .gold-glow {
+      box-shadow: 0 0 20px rgba(255, 203, 112, 0.2);
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #17152E;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #7257FF;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-midnight text-ivory antialiased selection:bg-violet selection:text-white pb-20">
+
+  <!-- 1. TOP COUNTDOWN BAR -->
+  <div id="top-bar" class="sticky top-0 z-50 bg-[#1e1a3d] border-b border-violet/30 px-4 py-2.5 text-xs sm:text-sm font-medium text-center backdrop-blur-md bg-opacity-95 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-4">
+      <div class="flex items-center gap-2 text-gold font-bold">
+        <svg class="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>LIMITED CAMPAIGN OFFER — 90% OFF ENDS IN:</span>
+        <span id="top-timer" class="font-mono bg-midnight px-2 py-0.5 rounded text-gold border border-gold/30 tracking-wider">01:59:59</span>
+      </div>
+      <a href="#pricing" class="inline-flex items-center gap-1 bg-violet hover:bg-violet-hover text-white text-xs font-bold px-3 py-1 rounded-full transition-transform transform hover:scale-105 active:scale-95 shadow-sm">
+        Get Ebook — ₹299
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. HEADER / NAVIGATION -->
+  <header class="border-b border-violet/15 bg-midnight/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-violet/20 border border-violet/40 flex items-center justify-center text-violet font-extrabold text-xl shadow-inner">
+          T
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-white block">Tasknetic</span>
+          <span class="text-xs text-lavender/70 block -mt-1 font-medium">Less Busywork. More Life.</span>
+        </div>
+      </div>
+      <a href="#pricing" class="hidden sm:inline-flex items-center justify-center bg-violet/20 hover:bg-violet text-lavender hover:text-white border border-violet/40 px-5 py-2 rounded-xl text-sm font-bold transition-all">
+        Quick Buy — ₹299
+      </a>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION (AIDA Framework) -->
+  <section id="hero" class="relative pt-8 pb-16 md:py-20 overflow-hidden border-b border-violet/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copy & CTA -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-violet/20 border border-violet/40 px-3.5 py-1.5 rounded-full text-xs font-bold text-lavender mb-6 uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
+            30-Day Digital Detox Guide
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-4">
+            Take Back <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet via-lavender to-gold">Your Time</span>
+          </h1>
+          <p class="text-xl sm:text-2xl font-bold text-gold mb-4">
+            The 30-Day Digital Detox Guide
+          </p>
+          
+          <p class="text-base sm:text-lg text-muted max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            Spend less time scrolling, protect your attention, and build a calmer digital routine with practical strategies and AI-assisted workflows.
+          </p>
+
+          <!-- Price & Primary CTA -->
+          <div class="bg-surface/80 border border-violet/30 rounded-2xl p-6 mb-8 max-w-md mx-auto lg:mx-0 backdrop-blur-sm glow-effect">
+            <div class="flex items-baseline justify-center lg:justify-start gap-3 mb-2">
+              <span class="text-4xl font-black text-white">₹299</span>
+              <span class="text-lg text-muted/60 line-through">₹2,999</span>
+              <span class="bg-gold/20 text-gold text-xs font-bold px-2.5 py-1 rounded-full border border-gold/30">90% OFF</span>
+            </div>
+            
+            <a href="https://superprofile.bio" target="_blank" class="block w-full text-center bg-violet hover:bg-violet-hover text-white font-extrabold text-lg py-4 px-6 rounded-xl transition-all shadow-lg shadow-violet/30 hover:shadow-violet/50 transform hover:-translate-y-0.5 active:translate-y-0 mb-3">
+              Get the Ebook — ₹299
+            </a>
+            
+            <p class="text-xs text-muted/80 text-center">
+              One-time payment. Optional add-ons available separately at checkout.
+            </p>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-lavender/80">
+            <div class="flex items-center gap-1.5 bg-surface/50 px-3 py-1.5 rounded-lg border border-violet/10">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
+              Instant PDF Download
+            </div>
+            <div class="flex items-center gap-1.5 bg-surface/50 px-3 py-1.5 rounded-lg border border-violet/10">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              7-Day Access Guarantee
+            </div>
+            <div class="flex items-center gap-1.5 bg-surface/50 px-3 py-1.5 rounded-lg border border-violet/10">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+              100% Secure Payment
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Visual Mockup -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-violet via-lavender to-gold opacity-30 blur-xl"></div>
+            <div class="relative rounded-2xl overflow-hidden border border-violet/30 shadow-2xl bg-surface">
+              <img src="Take Back Your Time (2).png" alt="Take Back Your Time Digital Detox Book Preview" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='1792565267.jpg';">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PAS SECTION (Problem - Agitation - Solution) -->
+  <section class="py-16 bg-surface/40 border-b border-violet/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">
+          Does This Digital Loop Sound Familiar?
+        </h2>
+        <p class="text-muted text-base sm:text-lg">
+          Technology should empower your work, not consume every free moment of your attention.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Problem -->
+        <div class="bg-surface p-8 rounded-2xl border border-red-500/20 relative overflow-hidden">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 flex items-center justify-center font-bold text-xl mb-6">
+            01
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">The Problem</h3>
+          <p class="text-muted text-sm leading-relaxed">
+            You open your phone to check one quick work message, then find yourself scrolling social media or news feeds for 45 minutes without consciously deciding to stay.
+          </p>
+        </div>
+
+        <!-- Agitation -->
+        <div class="bg-surface p-8 rounded-2xl border border-gold/20 relative overflow-hidden">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 text-gold flex items-center justify-center font-bold text-xl mb-6">
+            02
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">The Agitation</h3>
+          <p class="text-muted text-sm leading-relaxed">
+            Constant digital notifications fragment your attention span, disrupt daily personal routines, and leave you feeling exhausted, busy, but never truly finished.
+          </p>
+        </div>
+
+        <!-- Solution -->
+        <div class="bg-surface p-8 rounded-2xl border border-violet/30 relative overflow-hidden glow-effect">
+          <div class="w-12 h-12 rounded-xl bg-violet/20 border border-violet/40 text-violet flex items-center justify-center font-bold text-xl mb-6">
+            03
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">The Solution</h3>
+          <p class="text-muted text-sm leading-relaxed">
+            Tasknetic's guide provides a structured 30-day framework to examine habits, redesign your phone/desktop environment, and leverage simple AI automation for calm productivity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRODUCT SHOWCASE & 8 KEY FEATURES -->
+  <section class="py-16 md:py-24 border-b border-violet/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-gold tracking-widest uppercase mb-2 block">Step-By-Step System</span>
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">
+          Inside the 30-Day Digital Detox Blueprint
+        </h2>
+        <p class="text-muted text-base sm:text-lg">
+          Master 8 practical modules designed to rebuild your focus without isolating yourself from modern digital tools.
+        </p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">📊</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">1. Understand Attention</h3>
+          <p class="text-muted text-xs leading-relaxed">Recognize personal usage habits, cognitive triggers, and hidden screen time drains.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">🎯</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">2. Set Clear Boundaries</h3>
+          <p class="text-muted text-xs leading-relaxed">Establish realistic digital boundaries aligned with your actual work and life priorities.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">📱</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">3. Redesign Your Phone</h3>
+          <p class="text-muted text-xs leading-relaxed">Turn your mobile device into an intentional tool rather than an attention casino.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">🖥️</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">4. Workspace Reset</h3>
+          <p class="text-muted text-xs leading-relaxed">Build a low-distraction desktop environment optimized for long focus sessions.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">⏱️</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">5. Time Blocking</h3>
+          <p class="text-muted text-xs leading-relaxed">Batch communication tasks and schedule uninterrupted deep work periods.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">📨</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">6. Inbox Triage</h3>
+          <p class="text-muted text-xs leading-relaxed">Streamline repetitive emails and notifications using automated filtering rules.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">🤖</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">7. AI Workflows</h3>
+          <p class="text-muted text-xs leading-relaxed">Build custom AI prompt templates to summarize documents and speed up routine chores.</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 hover:border-violet/50 transition-all group">
+          <div class="text-2xl mb-4">🌱</div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-lavender transition-colors">8. Maintain Progress</h3>
+          <p class="text-muted text-xs leading-relaxed">Review habits periodically and sustain calm focus long after the 30 days are complete.</p>
+        </div>
+
+      </div>
+
+      <!-- Feature Visual Showcases -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 flex justify-center items-center">
+          <img src="Take Back Your Time.png" alt="Ebook Preview Chapter" class="max-h-96 rounded-lg object-contain shadow-lg" onerror="this.onerror=null; this.src='1792565267.jpg';">
+        </div>
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 flex justify-center items-center">
+          <img src="Take back your time (1).jpg" alt="Conceptual Digital Detox Work Visual" class="max-h-96 rounded-lg object-cover w-full shadow-lg" onerror="this.onerror=null; this.src='1792565267.jpg';">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. SOCIAL PROOF (5-Star Gold Reviews) -->
+  <section class="py-16 bg-surface/30 border-b border-violet/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="flex items-center justify-center gap-1 text-gold text-2xl mb-2">
+          ★★★★★
+        </div>
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-3">
+          Loved By Focused Readers
+        </h2>
+        <p class="text-muted text-base">
+          Read what members of our community say about the 30-Day Digital Detox Guide.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 flex flex-col justify-between">
+          <div>
+            <div class="flex text-gold text-lg mb-3">★★★★★</div>
+            <p class="text-muted text-sm leading-relaxed mb-4 italic">
+              "Really nice and easy to understand. I liked how the content is presented in a simple, straightforward way."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-violet/10">
+            <div class="w-9 h-9 rounded-full bg-violet/30 border border-violet/50 flex items-center justify-center text-white font-bold text-sm">
+              K
+            </div>
+            <div>
+              <span class="text-white font-bold text-sm block">Karthik</span>
+              <span class="text-xs text-lavender/60 block">Verified Reader</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 flex flex-col justify-between">
+          <div>
+            <div class="flex text-gold text-lg mb-3">★★★★★</div>
+            <p class="text-muted text-sm leading-relaxed mb-4 italic">
+              "Good content with a simple approach. The ebook is easy to read and makes the topic feel approachable."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-violet/10">
+            <div class="w-9 h-9 rounded-full bg-violet/30 border border-violet/50 flex items-center justify-center text-white font-bold text-sm">
+              S
+            </div>
+            <div>
+              <span class="text-white font-bold text-sm block">Sneha</span>
+              <span class="text-xs text-lavender/60 block">Verified Reader</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 flex flex-col justify-between">
+          <div>
+            <div class="flex text-gold text-lg mb-3">★★★★★</div>
+            <p class="text-muted text-sm leading-relaxed mb-4 italic">
+              "Really nice! The idea is useful, and I appreciate the simple way the information is explained."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-violet/10">
+            <div class="w-9 h-9 rounded-full bg-violet/30 border border-violet/50 flex items-center justify-center text-white font-bold text-sm">
+              P
+            </div>
+            <div>
+              <span class="text-white font-bold text-sm block">Prem</span>
+              <span class="text-xs text-lavender/60 block">Verified Reader</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-surface p-6 rounded-2xl border border-violet/20 flex flex-col justify-between">
+          <div>
+            <div class="flex text-gold text-lg mb-3">★★★★★</div>
+            <p class="text-muted text-sm leading-relaxed mb-4 italic">
+              "A good and straightforward read. I liked the simple presentation and easy-to-follow content."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-violet/10">
+            <div class="w-9 h-9 rounded-full bg-violet/30 border border-violet/50 flex items-center justify-center text-white font-bold text-sm">
+              S
+            </div>
+            <div>
+              <span class="text-white font-bold text-sm block">Suhan</span>
+              <span class="text-xs text-lavender/60 block">Verified Reader</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. INTERACTIVE AI PROMPT PREVIEW TOOL -->
+  <section class="py-16 border-b border-violet/15">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold text-gold tracking-widest uppercase block mb-2">Interactive Preview</span>
+        <h2 class="text-3xl font-extrabold text-white mb-3">
+          Test AI Productivity Prompts
+        </h2>
+        <p class="text-muted text-sm sm:text-base">
+          Preview sample AI prompt templates included in the guide to automate daily administrative busywork.
+        </p>
+      </div>
+
+      <div class="bg-surface rounded-2xl border border-violet/30 overflow-hidden shadow-xl">
+        <!-- Tabs -->
+        <div class="flex border-b border-violet/20 bg-midnight/50 p-2 gap-2 overflow-x-auto">
+          <button onclick="switchPrompt('planner')" id="tab-planner" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-violet text-white">
+            📅 Daily Focus Planner
+          </button>
+          <button onclick="switchPrompt('reset')" id="tab-reset" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-muted hover:text-white">
+            🧠 Distraction Reset
+          </button>
+          <button onclick="switchPrompt('inbox')" id="tab-inbox" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-muted hover:text-white">
+            📥 Inbox Triage
+          </button>
+        </div>
+
+        <!-- Prompt Content Display -->
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span id="prompt-title" class="text-sm font-bold text-gold">Daily Focus Planning Prompt</span>
+            <button onclick="copyPrompt()" class="inline-flex items-center gap-1.5 text-xs bg-violet/20 hover:bg-violet text-lavender hover:text-white px-3 py-1.5 rounded-lg border border-violet/30 transition-all">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              <span id="copy-text">Copy Prompt</span>
+            </button>
+          </div>
+
+          <div class="bg-midnight/90 rounded-xl p-4 border border-violet/10 font-mono text-xs sm:text-sm text-lavender leading-relaxed overflow-x-auto custom-scroll max-h-60" id="prompt-box">
+"I have 3 main work priorities today: [Priority 1, Priority 2, Priority 3]. Organize these into a realistic 4-hour focus block schedule with 10-minute rest breaks, batching small email responses into a single 20-minute end-of-day window."
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. CXL VALUE COMPARISON TABLE -->
+  <section class="py-16 bg-surface/30 border-b border-violet/15">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-white mb-3">
+          Why Choose Tasknetic?
+        </h2>
+        <p class="text-muted text-sm sm:text-base">
+          A structured roadmap vs guessing on your own.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-violet/20 shadow-xl bg-surface">
+        <table class="w-full text-left border-collapse min-w-[600px]">
+          <thead>
+            <tr class="border-b border-violet/20 bg-midnight/60">
+              <th class="p-4 text-sm font-bold text-white">Features</th>
+              <th class="p-4 text-sm font-bold text-violet bg-violet/10 border-x border-violet/20">Tasknetic 30-Day Guide</th>
+              <th class="p-4 text-sm font-bold text-muted">Unstructured Attempt</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-violet/10 text-xs sm:text-sm">
+            <tr>
+              <td class="p-4 font-semibold text-white">Action Plan</td>
+              <td class="p-4 bg-violet/5 border-x border-violet/20 text-gold font-bold">✓ Structured 30-Day Roadmap</td>
+              <td class="p-4 text-muted/60">✗ Random daily decisions</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">Phone & OS Redesign</td>
+              <td class="p-4 bg-violet/5 border-x border-violet/20 text-gold font-bold">✓ Complete Layout Blueprints</td>
+              <td class="p-4 text-muted/60">✗ Vague willpower rules</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">AI Automation Prompts</td>
+              <td class="p-4 bg-violet/5 border-x border-violet/20 text-gold font-bold">✓ Tested Workflows Included</td>
+              <td class="p-4 text-muted/60">✗ Manual trial and error</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">Time Commitment</td>
+              <td class="p-4 bg-violet/5 border-x border-violet/20 text-gold font-bold">✓ 15 Mins / Day</td>
+              <td class="p-4 text-muted/60">✗ Endless research loops</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">Price</td>
+              <td class="p-4 bg-violet/5 border-x border-violet/20 text-white font-extrabold">₹299 One-Time</td>
+              <td class="p-4 text-muted/60">Hours of wasted attention</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. 12 EXPANDED ACCORDION FAQS -->
+  <section id="faq" class="py-16 border-b border-violet/15">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold text-gold tracking-widest uppercase block mb-2">Got Questions?</span>
+        <h2 class="text-3xl font-extrabold text-white mb-3">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-muted text-sm sm:text-base">
+          Everything you need to know about the ebook and access.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-1')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>1. What exactly do I receive for ₹299?</span>
+            <span id="faq-icon-1" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            You receive full access to <strong>Take Back Your Time: The 30-Day Digital Detox Guide</strong> in digital PDF format, including all 8 core modules, screen layout blueprints, and AI prompt workflows.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-2')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>2. Is this a recurring monthly subscription?</span>
+            <span id="faq-icon-2" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            No. This is a <strong>one-time payment of ₹299</strong> with zero hidden fees or recurring subscriptions.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-3')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>3. How and when will I receive the guide after buying?</span>
+            <span id="faq-icon-3" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            Immediately upon successful payment, you will be redirected to an instant download page on SuperProfile and receive a download link via email.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-4')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>4. Are the ₹99 add-ons required to get value?</span>
+            <span id="faq-icon-4" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            No. The core ₹299 ebook is completely self-contained. The 30-Day AI Focus Action Plan (₹99) and Digital Calm Prompt Pack (₹99) are strictly optional additions available at checkout.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-5')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>5. Is this suitable for non-technical beginners?</span>
+            <span id="faq-icon-5" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-5" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            Yes! All strategies use plain language, simple toggle settings on iOS/Android, and copy-paste AI templates requiring no technical background.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-6')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>6. What if I experience issues receiving my download?</span>
+            <span id="faq-icon-6" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-6" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            If you face any download issue, simply email our support team at <strong>taskneticaiagents@gmail.com</strong> with your payment receipt for direct assistance within 7 days.
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-7')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>7. Can I read this on my phone or tablet?</span>
+            <span id="faq-icon-7" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-7" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            Yes! The PDF ebook is formatted specifically for clear readability on mobile phones, tablets, laptops, and e-readers.
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-8')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>8. What AI tools do I need for the prompt workflows?</span>
+            <span id="faq-icon-8" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-8" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            The prompts work with free tiers of ChatGPT, Claude, Gemini, or any standard AI assistant. No paid subscriptions required.
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-9')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>9. How much time does the guide take per day?</span>
+            <span id="faq-icon-9" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-9" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            Each day's module takes roughly 10 to 15 minutes to read and apply.
+          </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-10')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>10. What payment options are supported?</span>
+            <span id="faq-icon-10" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-10" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            Through SuperProfile, we accept UPI (GPay, PhonePe, Paytm), Credit/Debit Cards, and Net Banking.
+          </div>
+        </div>
+
+        <!-- FAQ 11 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-11')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>11. Do I need to quit social media completely?</span>
+            <span id="faq-icon-11" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-11" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            No. The guide emphasizes intentional boundaries rather than extreme monk mode. You decide what stays and what goes.
+          </div>
+        </div>
+
+        <!-- FAQ 12 -->
+        <div class="bg-surface rounded-2xl border border-violet/20 overflow-hidden">
+          <button onclick="toggleFaq('faq-12')" class="w-full p-5 text-left font-bold text-white flex justify-between items-center gap-4 hover:text-lavender transition-colors">
+            <span>12. How do I contact support?</span>
+            <span id="faq-icon-12" class="text-xl text-violet font-mono">+</span>
+          </button>
+          <div id="faq-12" class="hidden px-5 pb-5 text-xs sm:text-sm text-muted leading-relaxed border-t border-violet/10 pt-3">
+            For questions or delivery help, email us directly at <strong>taskneticaiagents@gmail.com</strong>.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. PRICING OFFER CARD -->
+  <section id="pricing" class="py-16 bg-surface/40">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-surface rounded-3xl border-2 border-violet/40 p-8 sm:p-10 relative overflow-hidden shadow-2xl glow-effect text-center">
+        <div class="absolute -top-12 -right-12 w-40 h-40 bg-violet/20 rounded-full blur-2xl"></div>
+        
+        <span class="inline-block bg-gold/20 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/30 mb-4 uppercase tracking-widest">
+          Limited Time Offer
+        </span>
+        
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">
+          Take Back Your Time Today
+        </h2>
+        <p class="text-muted text-sm sm:text-base mb-8">
+          Start your 30-day digital detox and build a calmer, highly focused routine.
+        </p>
+
+        <!-- Price Stack -->
+        <div class="flex items-baseline justify-center gap-3 mb-6">
+          <span class="text-5xl font-black text-white">₹299</span>
+          <span class="text-xl text-muted/60 line-through">₹2,999</span>
+          <span class="bg-violet/30 text-lavender text-xs font-bold px-3 py-1 rounded-full border border-violet/40">Save 90%</span>
+        </div>
+
+        <!-- Bullet List -->
+        <div class="text-left bg-midnight/60 rounded-2xl p-6 border border-violet/15 mb-8 space-y-3 text-xs sm:text-sm">
+          <div class="flex items-start gap-2.5 text-white">
+            <span class="text-gold font-bold">✓</span>
+            <span><strong>Take Back Your Time</strong> 30-Day Digital Detox Ebook (PDF)</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-white">
+            <span class="text-gold font-bold">✓</span>
+            <span>8 Comprehensive Modules & Workspace Layout Blueprints</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-white">
+            <span class="text-gold font-bold">✓</span>
+            <span>Beginner AI Prompt Workflows for Admin Tasks</span>
+          </div>
+          
+          <div class="border-t border-violet/20 my-3 pt-3">
+            <div class="text-xs font-bold text-lavender uppercase tracking-wider mb-2">Optional Checkout Add-Ons:</div>
+            <div class="flex items-center justify-between text-muted text-xs mb-1">
+              <span>• The 30-Day AI Focus Action Plan</span>
+              <span class="text-gold font-bold">+₹99</span>
+            </div>
+            <div class="flex items-center justify-between text-muted text-xs">
+              <span>• The Digital Calm Prompt Pack</span>
+              <span class="text-gold font-bold">+₹99</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://superprofile.bio" target="_blank" class="block w-full text-center bg-violet hover:bg-violet-hover text-white font-extrabold text-xl py-4 px-8 rounded-2xl transition-all shadow-xl shadow-violet/40 transform hover:scale-[1.02] active:scale-95 mb-4">
+          Get the Ebook — ₹299
+        </a>
+
+        <p class="text-xs text-muted/70">
+          Instant PDF Download • 7-Day Access Guarantee • Secure Payment
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. STICKY BOTTOM BUY BAR -->
+  <div id="sticky-bar" class="fixed bottom-0 left-0 w-full bg-midnight/95 backdrop-blur-md border-t border-violet/30 p-4 transform translate-y-full opacity-0 transition-all duration-300 ease-in-out z-40 shadow-2xl">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+      <div class="flex items-center gap-4">
+        <div class="hidden md:block text-left">
+          <div class="font-bold text-base text-white">Take Back Your Time: 30-Day Digital Detox</div>
+          <div class="text-xs text-lavender/80">Instant PDF Download • 8 Modules</div>
+        </div>
+        <div class="flex items-baseline gap-2">
+          <span class="text-2xl font-black text-gold">₹299</span>
+          <span class="text-sm line-through text-muted/60">₹2,999</span>
+          <span class="text-xs bg-violet/30 text-lavender px-2 py-0.5 rounded-full border border-violet/40 font-semibold">90% OFF</span>
+        </div>
+      </div>
+      <a href="https://superprofile.bio" target="_blank" class="w-full sm:w-auto px-8 py-3 bg-violet hover:bg-violet-hover text-white font-bold rounded-xl shadow-lg shadow-violet/30 hover:scale-105 active:scale-95 transition-all text-center">
+        Get Instant Access Now →
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-violet/15 py-10 bg-midnight text-center text-xs text-muted/60">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded bg-violet/20 border border-violet/40 flex items-center justify-center text-violet font-extrabold text-xs">T</div>
+        <span class="text-sm font-bold text-white">Tasknetic</span>
+      </div>
+      <p>Take Back Your Time: The 30-Day Digital Detox Guide © 2026. All rights reserved.</p>
+      <p>Contact Support: <a href="mailto:taskneticaiagents@gmail.com" class="text-lavender hover:underline">taskneticaiagents@gmail.com</a></p>
+      
+      <!-- Configurator Gear Button -->
+      <button onclick="toggleConfigModal()" class="mt-2 text-muted/40 hover:text-muted flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        <span>Page Configurator</span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- 12. CONFIGURABLE CHECKOUT MODAL -->
+  <div id="config-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-surface border border-violet/30 rounded-2xl p-6 max-w-md w-full shadow-2xl">
+      <h3 class="text-lg font-bold text-white mb-4">Landing Page Configuration</h3>
+      
+      <div class="space-y-4 text-xs">
+        <div>
+          <label class="block text-lavender font-semibold mb-1">SuperProfile Checkout URL:</label>
+          <input type="text" id="config-url" class="w-full bg-midnight border border-violet/30 rounded-lg p-2.5 text-white focus:outline-none focus:border-violet" placeholder="https://superprofile.bio">
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-3 mt-6">
+        <button onclick="toggleConfigModal()" class="px-4 py-2 bg-midnight text-muted rounded-lg font-semibold hover:text-white">Cancel</button>
+        <button onclick="saveConfig()" class="px-4 py-2 bg-violet text-white rounded-lg font-bold hover:bg-violet-hover">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Persistent 2-Hour Countdown Timer Logic (Top Bar)
+    function startCountdown() {
+      let duration = 7200; // 2 hours in seconds
+      const timerDisplay = document.getElementById('top-timer');
+
+      setInterval(() => {
+        let hours = Math.floor(duration / 3600);
+        let minutes = Math.floor((duration % 3600) / 60);
+        let seconds = duration % 60;
+
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        if (timerDisplay) {
+          timerDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        if (--duration < 0) {
+          duration = 7200; // Reset
+        }
+      }, 1000);
+    }
+
+    // 2. Intersection Observer for Sticky Bottom Bar (Triggers ONLY after scrolling past Hero)
+    document.addEventListener('DOMContentLoaded', () => {
+      startCountdown();
+
+      const heroSection = document.getElementById('hero');
+      const stickyBar = document.getElementById('sticky-bar');
+
+      if (heroSection && stickyBar) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+              stickyBar.classList.remove('translate-y-full', 'opacity-0');
+              stickyBar.classList.add('translate-y-0', 'opacity-100');
+            } else {
+              stickyBar.classList.remove('translate-y-0', 'opacity-100');
+              stickyBar.classList.add('translate-y-full', 'opacity-0');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        observer.observe(heroSection);
+      }
+    });
+
+    // 3. Interactive AI Prompt Preview Switching
+    const promptData = {
+      planner: {
+        title: "Daily Focus Planning Prompt",
+        code: `"I have 3 main work priorities today: [Priority 1, Priority 2, Priority 3]. Organize these into a realistic 4-hour focus block schedule with 10-minute rest breaks, batching small email responses into a single 20-minute end-of-day window."`
+      },
+      reset: {
+        title: "Distraction & Habit Reset Prompt",
+        code: `"Act as a digital habits coach. I catch myself opening social media whenever I hit a challenging problem at work. Give me a 3-step physical and digital circuit to disrupt this habit trigger over the next 7 days."`
+      },
+      inbox: {
+        title: "Inbox Triage & Draft Prompt",
+        code: `"Summarize this email chain into 2 key bullet points and draft a concise, polite reply confirming receipt while stating I will follow up by 3 PM tomorrow."`
+      }
+    };
+
+    function switchPrompt(type) {
+      ['planner', 'reset', 'inbox'].forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        if (t === type) {
+          btn.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-violet text-white";
+        } else {
+          btn.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-muted hover:text-white";
+        }
+      });
+
+      document.getElementById('prompt-title').textContent = promptData[type].title;
+      document.getElementById('prompt-box').textContent = promptData[type].code;
+    }
+
+    function copyPrompt() {
+      const text = document.getElementById('prompt-box').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const label = document.getElementById('copy-text');
+        label.textContent = "Copied! ✓";
+        setTimeout(() => label.textContent = "Copy Prompt", 2000);
+      });
+    }
+
+    // 4. Accordion FAQ Toggle Logic
+    function toggleFaq(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(`faq-icon-${id.split('-')[1]}`);
+      
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        if (icon) icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        if (icon) icon.textContent = '+';
+      }
+    }
+
+    // 5. Configurator Modal Logic
+    function toggleConfigModal() {
+      const modal = document.getElementById('config-modal');
+      modal.classList.toggle('hidden');
+    }
+
+    function saveConfig() {
+      const url = document.getElementById('config-url').value;
+      if (url) {
+        document.querySelectorAll('a[href^="https://superprofile.bio"]').forEach(a => a.href = url);
+      }
+      toggleConfigModal();
+    }
+  </script>
+</body>
+</html>
